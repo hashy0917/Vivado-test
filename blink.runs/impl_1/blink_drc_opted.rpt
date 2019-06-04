@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Tue Jun  4 12:43:36 2019
+| Date         : Tue Jun  4 14:37:36 2019
 | Host         : X220Arch running 64-bit unknown
 | Command      : report_drc -file blink_drc_opted.rpt -pb blink_drc_opted.pb -rpx blink_drc_opted.rpx
 | Design       : blink

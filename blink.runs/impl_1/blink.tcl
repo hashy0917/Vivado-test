@@ -75,7 +75,7 @@ set rc [catch {
   set_property ip_output_repo /home/oohasi/vivado/blink/blink.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   add_files -quiet /home/oohasi/vivado/blink/blink.runs/synth_1/blink.dcp
-  read_xdc /home/oohasi/vivado/blink/blink.srcs/constrs_1/imports/blink/blink.xdc
+  read_xdc /home/oohasi/vivado/blink/blink.xdc
   link_design -top blink -part xc7z020clg400-1
   close_msg_db -file init_design.pb
 } RESULT]

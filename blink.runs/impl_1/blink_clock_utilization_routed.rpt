@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Tue Jun  4 12:44:28 2019
+| Date         : Tue Jun  4 14:38:15 2019
 | Host         : X220Arch running 64-bit unknown
 | Command      : report_clock_utilization -file blink_clock_utilization_routed.rpt
 | Design       : blink
@@ -55,7 +55,7 @@ Table of Contents
 +-----------+-----------+-----------------+------------+------------+--------------+-------------+-----------------+---------------------+--------------+-----------------+----------+
 | Source Id | Global Id | Driver Type/Pin | Constraint | Site       | Clock Region | Clock Loads | Non-Clock Loads | Source Clock Period | Source Clock | Driver Pin      | Net      |
 +-----------+-----------+-----------------+------------+------------+--------------+-------------+-----------------+---------------------+--------------+-----------------+----------+
-| src0      | g0        | IBUF/O          | IOB_X1Y128 | IOB_X1Y128 | X1Y2         |           1 |               0 |               8.000 | sys_clk_pin  | CLK_IBUF_inst/O | CLK_IBUF |
+| src0      | g0        | IBUF/O          | IOB_X1Y124 | IOB_X1Y124 | X1Y2         |           1 |               0 |               8.000 | sys_clk_pin  | CLK_IBUF_inst/O | CLK_IBUF |
 +-----------+-----------+-----------------+------------+------------+--------------+-------------+-----------------+---------------------+--------------+-----------------+----------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
@@ -74,7 +74,7 @@ Table of Contents
 | X0Y1              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |  1200 |    0 |   400 |    0 |    20 |    0 |    10 |    0 |    20 |
 | X1Y1              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  2600 |    0 |   850 |    0 |    60 |    0 |    30 |    0 |    40 |
 | X0Y2              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |  1200 |    0 |   400 |    0 |    20 |    0 |    10 |    0 |    20 |
-| X1Y2              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |   26 |  2600 |   23 |   850 |    0 |    60 |    0 |    30 |    0 |    40 |
+| X1Y2              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |   26 |  2600 |    3 |   850 |    0 |    60 |    0 |    30 |    0 |    40 |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 * Global Clock column represents track count; while other columns represents cell counts
 
@@ -135,7 +135,7 @@ set_property LOC BUFGCTRL_X0Y16 [get_cells CLK_IBUF_BUFG_inst]
 # Location of IO Primitives which is load of clock spine
 
 # Location of clock ports
-set_property LOC IOB_X1Y128 [get_ports CLK]
+set_property LOC IOB_X1Y124 [get_ports CLK]
 
 # Clock net "CLK_IBUF_BUFG" driven by instance "CLK_IBUF_BUFG_inst" located at site "BUFGCTRL_X0Y16"
 #startgroup
