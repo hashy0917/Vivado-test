@@ -2,7 +2,7 @@ module blink(
 	input                CLK,
 	input                RST,
 	output   reg[3:0]    LED
-)
+);
 
 /* システムクロックを分周 */
 reg[22:0] cnt23;
