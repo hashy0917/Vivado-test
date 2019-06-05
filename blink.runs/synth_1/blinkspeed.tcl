@@ -18,7 +18,6 @@ proc create_report { reportName command } {
   }
 }
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7z020clg400-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -45,12 +44,12 @@ set_property used_in_implementation false [get_files /home/oohasi/vivado/blink/b
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
-synth_design -top blink -part xc7z020clg400-1
+synth_design -top blinkspeed -part xc7z020clg400-1
 
 
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef blink.dcp
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file blink_utilization_synth.rpt -pb blink_utilization_synth.pb"
+write_checkpoint -force -noxdef blinkspeed.dcp
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file blinkspeed_utilization_synth.rpt -pb blinkspeed_utilization_synth.pb"
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]

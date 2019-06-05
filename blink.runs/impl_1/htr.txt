@@ -6,4 +6,4 @@
 # Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 #
 
-vivado -log blink.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source blink.tcl -notrace
+vivado -log blinkspeed.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source blinkspeed.tcl -notrace

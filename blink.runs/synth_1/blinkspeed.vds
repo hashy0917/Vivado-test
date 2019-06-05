@@ -1,13 +1,14 @@
-
-*** Running vivado
-    with args -log blinkspeed.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source blinkspeed.tcl
-
-
-****** Vivado v2018.3 (64-bit)
-  **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
-  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
-
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Jun  5 10:20:22 2019
+# Process ID: 6243
+# Current directory: /home/oohasi/vivado/blink/blink.runs/synth_1
+# Command line: vivado -log blinkspeed.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source blinkspeed.tcl
+# Log file: /home/oohasi/vivado/blink/blink.runs/synth_1/blinkspeed.vds
+# Journal file: /home/oohasi/vivado/blink/blink.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
 source blinkspeed.tcl -notrace
 Command: synth_design -top blinkspeed -part xc7z020clg400-1
 Starting synth_design
